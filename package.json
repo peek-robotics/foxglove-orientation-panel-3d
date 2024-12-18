@@ -1,0 +1,40 @@
+{
+  "name": "foxglove-orientation-panel-3d",
+  "displayName": "foxglove-orientation-panel-3d",
+  "description": "Simple 3D visualization of orientation topics",
+  "publisher": "peek_robotics",
+  "homepage": "",
+  "version": "0.0.2",
+  "license": "UNLICENSED",
+  "main": "./dist/extension.js",
+  "keywords": [],
+  "scripts": {
+    "build": "foxglove-extension build",
+    "foxglove:prepublish": "foxglove-extension build --mode production",
+    "lint": "eslint .",
+    "lint:ci": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "local-install": "foxglove-extension install",
+    "package": "foxglove-extension package",
+    "pretest": "foxglove-extension pretest"
+  },
+  "devDependencies": {
+    "@foxglove/eslint-plugin": "2.0.0",
+    "@foxglove/extension": "2.18.1",
+    "@foxglove/schemas": "^1.6.6",
+    "@types/lodash": "^4.17.13",
+    "@types/react": "18.3.17",
+    "@types/react-dom": "18.3.5",
+    "@types/three": "^0.171.0",
+    "create-foxglove-extension": "1.0.4",
+    "eslint": "9.17.0",
+    "prettier": "3.4.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "three": "^0.171.0"
+  }
+}
